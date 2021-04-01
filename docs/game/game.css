@@ -1,0 +1,46 @@
+body {
+    background: burlywood;
+}
+
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    /*черная линия земли*/
+    margin: auto;
+}
+
+#momodora {
+    height: 50px;
+    width: 50px;
+    background-image: url(img/бег/бег2.gif);
+    /*добавляем img*/
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#mob1 {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/препятствие/ппт.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 100px;
+    left: 580px;
+    animation: mob1Mov 5s infinite linear;
+    /*добавляем анимацию  1s-с какой скоростью будет двигаться    infinite-как будет двигаться (infinite=бесконечно) linear=будет ускоряться*/
+}
+
+@keyframes mob1Mov {
+    0% {
+        left: 580px;
+    }
+    /*начало анамаций*/
+    100% {
+        left: -20px;
+    }
+    /*конец*/
+}
+
+#mob2 {}
