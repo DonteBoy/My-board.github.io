@@ -1,1 +1,0 @@
-alert("My-board 18+")
